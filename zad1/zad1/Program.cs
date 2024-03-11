@@ -6,19 +6,12 @@ class Program {
     public static void Main(string[] args)
     {
        
-        int[] tab1 = { 1, 2, 3, 4, 5, 6 };
-        
-        int size = tab1.Length;
-        foreach (int num in tab1)
-        {
-            Console.WriteLine(num); 
-        }
+        int[] tab1 = { 4, 3, 3, 4, 5, 2 };
+        Console.WriteLine(AVGgrades(tab1));
+    }
 
-    
-
-static double AVGgrades(int[] ocenyTab){
-    ocenyTab = new[] { 5, 4, 3, 4, 2, 1 };
-    double srednia;
+static int AVGgrades(int[] ocenyTab){
+    int srednia;
     int suma = 0;
     int liczba = 0;
     foreach (var n in ocenyTab)
@@ -30,5 +23,4 @@ static double AVGgrades(int[] ocenyTab){
     srednia = suma / (liczba);
     return srednia;
         }
-    }      
 }
